@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/styles.css"/>
+   
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
+ <link rel="stylesheet" href="./css/styles.css"/>
+ <link rel="stylesheet" href="./css/tablet.css">
+ <link rel="stylesheet" href="./css/desctop.css">
 </head>
 <body>
     <header class="section-zero">
@@ -33,18 +35,23 @@
                     </li>
                 </ul>
             </address>
+            <button type="button" class="open-menu-btn">
+                <svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+                </svg>
+            </button>
         </div>
     </header>
 <main>
-<section class="section-first">   
+ <section class="section-first">   
     <div class="container">
         <h1 class="h-one">
             Effective Solutions for Your Business
         </h1>  
     <button type="button" class="button" >Order Service</button>
     </div>
-</section>
-<section class="section-second">
+</section> 
+ <section class="section-second">
 <div class="container">
     <h2 class="visually-hidden"> Features</h2>
         <ul class="list">
@@ -64,7 +71,7 @@
                     </svg>
                  </div>
                     <h3 class="hover-three">Punctuality </h3>
-                        <p class="paragraph">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
+                        <p class="paragraph-one">Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
             </li>
             <li  class="class-f">
                 <div class="fff">
@@ -87,7 +94,7 @@
         </ul>
 </div>
    
-</section>
+</section> 
 <section class="section-third">
 <div class="container">
         <h2 class="our-team">
@@ -250,7 +257,7 @@
    
         
 </section>
-<section class="section-fourth">
+ <section class="section-fourth">
     <div class="container">
         <h2 class="our-features">Our Portfolio</h2>
         <ul class="portfolio">
@@ -322,7 +329,7 @@
     
 </section>
 </main>
-
+ 
     <footer class="section-six">
         <div class="container fot-f">
             <div class="block-one">
@@ -371,14 +378,15 @@
                         <input class="input-f" type="email" name="email" placeholder="E-mail" required>
                     </label>
                     <button type="submit" class="but-class">Subscribe 
+
                     <svg class="svg-g" width="24" height="24">
-                        <use href="./images/symbol-defs[1].svg#icon-tg"></use>
+                        <use href="./images/symbol-defs.svg#icon-Frame-3"></use>
                     </svg></button>
                 </form>
             </div>
             </div>
     </footer>
-   <div class="modal-overlay is-open" >
+   <div class="modal-overlay" >
         <div class="modal-window">
             <button type="button" class="mbtn">
                 <svg width="8" height="8" class="mbtn-svg">

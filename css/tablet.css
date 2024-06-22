@@ -1,0 +1,102 @@
+@media screen and (min-width: 768px)  {
+    .container{
+        max-width: 768px;
+
+    }
+    .site-nav{
+        display: flex;
+        gap: 40px;
+    }
+    .open-menu-btn{
+        display: none;
+    }
+    .address-nav{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .logo{
+        margin-right: 120px;
+    }
+    .adress-first{
+        font-size: 12px;
+        line-height: 1.17;
+
+    }
+    .class-f{
+        width: calc((100% - 24px) / 2);
+    }
+    .list{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+    }
+    .hover-three{
+    text-align: left;
+    }
+    .section-first{
+        padding: 112px 0;
+        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/hero-tab-1x.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+	screen and (min-resolution: 192dpi) and (min-width: 768px),
+	screen and (min-resolution: 2dppx) and (min-width: 768px) {
+	.section-first {
+		background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+			url(../images/hero-tab-2x.jpg);
+	}
+}
+.h-one{
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin-bottom: 36px;
+    justify-content: center;
+
+}
+.fot-f{
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    gap: 72px 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.web-two{
+    text-align: left;
+}
+.sm-text{
+    text-align: left;
+}
+.sub-p{
+    text-align: left;
+}
+.form-f{
+    flex-direction: row;
+}
+.p-six{
+    font-size: 16px;
+}
+
+.team {
+    display: flex;
+    gap: 24px;
+    flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.portfolio {
+    display: flex;
+    column-gap: 24px;
+    row-gap: 48px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.qwe{
+    width: calc((100% - 72px) / 2);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+}

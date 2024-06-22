@@ -1,0 +1,97 @@
+@media screen and (min-width: 1158px){
+    .container{
+        max-width: 1158px;
+        padding: 0 15px;
+    }
+    .logo{
+        margin-right: 76px;
+    }
+    .address-nav{
+        flex-direction: row;
+        gap: 40px;
+    }
+    .adress-first{
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    .class-f{
+        width: calc((100% - 72px) / 4);
+    }
+    .fff{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
+        background-color: #F4F4FD;
+        border-radius: 4px;
+        border: 1px solid #8e8f99;
+        margin-bottom: 8px;
+    
+    }
+    .hover-three{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+    .paragraph-one{
+        font-weight: 400;
+    }
+    .section-second{
+        padding: 120px 0;
+    }
+    .section-first{
+        padding: 188px 0;
+        background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/backimg.jpg);
+    }
+    @media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
+	screen and (min-resolution: 192dpi) and (min-width:  1158px),
+	screen and (min-resolution: 2dppx) and (min-width:  1158px) {
+	.section-first {
+		background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+			url(../images/hero-desc-2x.jpg);
+	}
+}
+.h-one{
+    margin-bottom: 48px;
+}
+
+.block-two{
+        margin-right:auto;
+}
+.section-six{
+    padding: 100px 0;
+}
+.fot-f{
+    display: flex;
+    align-items: baseline;
+    gap: 80px;
+    flex-direction: row;
+}
+.web-two{
+    text-align: left;
+}
+.sm-text{
+    text-align: left;
+}
+.sub-p{
+    text-align: left;
+}
+.form-f{
+    flex-direction: row;
+}
+.p-six{
+    font-size: 16px;
+}
+.list-one{
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px; 
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+
+}
+.qwe{
+    width: calc((100% - 48px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+}

@@ -19,12 +19,7 @@ ul,ol {
     margin: 0;
     }
  
-.container{
-    width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
 
-}
 /*хедер*/
     .section-zero{
         border-bottom: 1px solid #e7e9fc;
@@ -33,11 +28,18 @@ ul,ol {
     .header-container{
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
     .navigations{
         display: flex;
         align-items: center;
     }
+    .container{
+        max-width: 320px;
+        padding: 0 16px;
+        margin: 0 auto;
+    }
+
 .logo{
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -46,17 +48,18 @@ ul,ol {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #404bbf;
-    margin-right: 76px;
-    position: relative;
+ 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
+    padding: 17px 0;
 }
 
 .studio{
 color: #2e2f42;
 }
 .site-nav{
-    display: flex;
-    gap: 40px;
+    display: none;
+    
 }
 .site-nav li{
     font-family: "Roboto", sans-serif;
@@ -103,7 +106,7 @@ border-radius: 2px;
     color:#404bbf;
 }
 .address-nav{
-    display: flex;
+    display: none;
     gap: 40px;
 }
 .adress{
@@ -131,6 +134,14 @@ border-radius: 2px;
 .adress-first:focus{
     color: #404bbf;
 }
+.open-menu-btn{
+    padding: 0;
+    line-height: 0;
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+    
+}
 /*первая секция*/
 .section-first{
     background-color: #2e2f42; 
@@ -138,29 +149,32 @@ border-radius: 2px;
         to bottom,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
-      ), url(../images/backimg.jpg);
+      ), url(../images/hero-mob-1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     margin: 0 auto;
     max-width: 1440px;
-    
+    padding: 72px 0;
 
 }
-.section-first{
-    padding: 188px 0 188px;       
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+	screen and (min-resolution: 192dpi) and (max-width: 767px),
+	screen and (min-resolution: 2dppx) and (max-width: 767px) {
+	.section-first {
+		background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+			url(../images/hero-mob-2x.jpg);
+	}
 }
 .h-one{
-    margin: auto;
-    margin-bottom: 48px;
-    max-width: 496px;
-}
-.h-one{
-font-size: 56px;
-line-height: 1.07;
+font-size: 36px;
+line-height: 1.11;
 letter-spacing: 0.02em;
 text-align: center;
 color: #ffffff;
+ margin: auto;
+    margin-bottom: 72px;
+    max-width: 216px;
 }
 
 .button{
@@ -197,7 +211,7 @@ color: #ffffff;
 }
 /*вторая секция*/
 .section-second{
-    padding: 120px 0;
+    padding: 96px 0;
 }
 .visually-hidden {
     position: absolute;
@@ -213,32 +227,25 @@ color: #ffffff;
   }
 .list{
     display: flex;
-    gap: 24px;
-}
-.class-f{
-    width: calc((100% - 72px) / 4);
+    flex-direction: column;
+    gap: 72px;
 }
 .fff{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 112px;
-    background-color: #F4F4FD;
-    border-radius: 4px;
-    border: 1px solid #8e8f99;
-    margin-bottom: 8px;
+    display: none;
+ 
 
 }
 .hover-three{
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
     color:  #2e2f42;
     margin-bottom: 8px;
 }
 
 .paragraph-one{
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -256,10 +263,10 @@ color: #ffffff;
 .team{
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 72px;
+    flex-direction: column;
 }
 .list-one{
-    width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px; 
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 
@@ -335,21 +342,17 @@ color: #ffffff;
     padding-top: 120px;
     padding-bottom: 120px;
 }
-.portfolio{
+.portfolio {
     display: flex;
-    flex-wrap: wrap;
     column-gap: 24px;
     row-gap: 48px;
+    flex-direction: column;
     
 }
 .our-features{
     margin-bottom: 72px;
 }
-.qwe{
-    width: calc((100% - 48px) / 3);
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
-}
+
 .qwe:hover{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     
@@ -383,9 +386,11 @@ color: #ffffff;
     letter-spacing: 0.02em;
     color: #434455;
 }
-.trans{
+.trans {
     position: relative;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 .trans-p{
     position: absolute;
@@ -406,16 +411,13 @@ color: #ffffff;
     transform: translateY(0%);
 }
 /*футер*/
-.section-six{
-    padding: 100px 0;
-}
+   
+
 .section-six{
     background-color: #2e2f42;
+    padding: 96px 0;
 }
-.web-two{
-    display: inline-block;
-    margin-bottom: 16px;
-}
+
 .p-six{
     max-width: 264px
 }
@@ -427,6 +429,9 @@ color: #ffffff;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5 ;
+   display: block;
+    margin-bottom: 16px;
+    text-align: center;
 }
 .text-two{
     color: #f4f4fd;
@@ -438,17 +443,13 @@ color: #ffffff;
 }
 .fot-f{
     display: flex;
-    align-items: baseline;
+    align-items: center;
+    flex-direction: column;
+    gap: 72px;
+
 }
-.block-one{
-    max-width: 264px;
-    margin-right: 120px
-}
-.block-two{
-    max-width: 208px;
-        margin: 0;
-        margin-right: 80px;
-}
+
+
 .sm-text{
     color: #ffffff;
     font-size: 16px;
@@ -456,6 +457,7 @@ color: #ffffff;
     letter-spacing: 0.02em;
     line-height: 1.5;
     margin-bottom: 16px;
+    text-align: center;
 }
 .links-two{
     display: flex;
@@ -492,9 +494,12 @@ color: #ffffff;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #ffffff;
+    text-align: center;
 }
 .form-f{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     gap:24px;
 }
 
@@ -730,3 +735,4 @@ color: #ffffff;
 
 /*Медиа*/
 
+ 
