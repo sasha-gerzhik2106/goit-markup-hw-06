@@ -65,7 +65,7 @@
 .fot-f{
     display: flex;
     align-items: baseline;
-    gap: 80px;
+    gap: unset;
     flex-direction: row;
 }
 .web-two{
@@ -93,5 +93,21 @@
     width: calc((100% - 48px) / 3);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
+}
+.section-third{
+    padding: 120px 0;
+}
+.section-fourth{
+    padding: 120px 0;
+}
+.portfolio{
+    gap: 48px 24px;
+}
+.block-one{
+    margin-right: 120px;
+}
+.modal-window{
+    width: 408px;
+    padding: 72px 24px 24px 24px;
 }
 }
